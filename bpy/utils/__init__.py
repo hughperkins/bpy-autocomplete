@@ -1,4 +1,4 @@
-import previews
+from . import previews
 
 
 __all__ = ["previews"]

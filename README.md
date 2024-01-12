@@ -10,7 +10,7 @@ Auto-completion for Blender bpy!
 - first uninstall `bpy` if it is installed, e.g. `pip uninstall bpy`
 - clone this repo
 - cd into this repo
-- `pip install -e .`
+- `pip install .`
 
 # How to update
 
@@ -23,3 +23,4 @@ Auto-completion for Blender bpy!
 - clone this repo (`bpy-autocomplete`)
 - cd into this cloned repo
 - run `python bpy_autocomplete/bpy_create.py`
+- rerun `pip install .`

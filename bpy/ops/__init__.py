@@ -1,80 +1,80 @@
-import screen
-import sculpt
-import constraint
-import mask
-import sound
-import world
-import console
-import spreadsheet
-import material
-import nla
-import cachefile
-import anim
-import import_scene
-import sequencer
-import asset
-import object
-import poselib
-import render
-import rigidbody
-import ui
-import mball
-import wm
-import gizmogroup
-import graph
-import uilist
-import preferences
-import paint
-import scene
-import mesh
-import font
-import view2d
-import palette
-import view3d
-import dpaint
-import action
-import curve
-import text_editor
-import brush
-import cycles
-import armature
-import marker
-import camera
-import file
-import export_mesh
-import buttons
-import lattice
-import pose
-import import_mesh
-import transform
-import text
-import geometry
-import texture
-import particle
-import collection
-import cloth
-import curves
-import uv
-import export_anim
-import import_curve
-import node
-import workspace
-import outliner
-import clip
-import script
-import info
-import ed
-import gpencil
-import paintcurve
-import sculpt_curves
-import image
-import grease_pencil
-import export_scene
-import surface
-import ptcache
-import import_anim
-import fluid
-import boid
+from . import screen
+from . import sculpt
+from . import constraint
+from . import mask
+from . import sound
+from . import world
+from . import console
+from . import spreadsheet
+from . import material
+from . import nla
+from . import cachefile
+from . import anim
+from . import import_scene
+from . import sequencer
+from . import asset
+from . import object
+from . import poselib
+from . import render
+from . import rigidbody
+from . import ui
+from . import mball
+from . import wm
+from . import gizmogroup
+from . import graph
+from . import uilist
+from . import preferences
+from . import paint
+from . import scene
+from . import mesh
+from . import font
+from . import view2d
+from . import palette
+from . import view3d
+from . import dpaint
+from . import action
+from . import curve
+from . import text_editor
+from . import brush
+from . import cycles
+from . import armature
+from . import marker
+from . import camera
+from . import file
+from . import export_mesh
+from . import buttons
+from . import lattice
+from . import pose
+from . import import_mesh
+from . import transform
+from . import text
+from . import geometry
+from . import texture
+from . import particle
+from . import collection
+from . import cloth
+from . import curves
+from . import uv
+from . import export_anim
+from . import import_curve
+from . import node
+from . import workspace
+from . import outliner
+from . import clip
+from . import script
+from . import info
+from . import ed
+from . import gpencil
+from . import paintcurve
+from . import sculpt_curves
+from . import image
+from . import grease_pencil
+from . import export_scene
+from . import surface
+from . import ptcache
+from . import import_anim
+from . import fluid
+from . import boid
 
 
 __all__ = ["screen", "sculpt", "constraint", "mask", "sound", "world", "console", "spreadsheet", "material", "nla", "cachefile", "anim", "import_scene", "sequencer", "asset", "object", "poselib", "render", "rigidbody", "ui", "mball", "wm", "gizmogroup", "graph", "uilist", "preferences", "paint", "scene", "mesh", "font", "view2d", "palette", "view3d", "dpaint", "action", "curve", "text_editor", "brush", "cycles", "armature", "marker", "camera", "file", "export_mesh", "buttons", "lattice", "pose", "import_mesh", "transform", "text", "geometry", "texture", "particle", "collection", "cloth", "curves", "uv", "export_anim", "import_curve", "node", "workspace", "outliner", "clip", "script", "info", "ed", "gpencil", "paintcurve", "sculpt_curves", "image", "grease_pencil", "export_scene", "surface", "ptcache", "import_anim", "fluid", "boid"]
