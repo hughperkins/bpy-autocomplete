@@ -2,6 +2,7 @@
 Given sphinx doc of bpy, generate autocomplete
 """
 import argparse
+from genericpath import isfile
 import os
 from os import path
 from os.path import join
@@ -35,6 +36,25 @@ def write_function(folder_path, filename, function) -> None:
 """)
 
 
+def create_init_files(target_dir: str) -> None:
+    child_modules = []
+    for child in os.listdir(target_dir):
+        child_path = join(target_dir, child)
+        if path.isdir(child_path) and not child_path.startswith("."):
+            create_init_files(child_path)
+        elif path.isfile(child_path):
+            child_modules.append(child.split(".")[0])
+    with open(join(target_dir, "__init__.py"), 'w') as f:
+        for child_module in child_modules:
+            f.write(f"import {child_module}\n")
+        f.write("\n\n")
+        all_l = []
+        for m in child_modules:
+            all_l.append('"' + m + '"')
+        all_str = ", ".join(all_l)
+        f.write(f"__all__ = [{all_str}]\n")
+
+
 def process_file(filepath: str, out_dir: str) -> None:
     module: Optional[str] = None
     with open(filepath) as f:
@@ -59,6 +79,8 @@ def run(args: argparse.Namespace) -> None:
             continue
         print(file)
         process_file(path.join(args.in_dir, file), args.out_dir)
+    
+    create_init_files(args.out_dir)
 
 
 if __name__ == '__main__':

@@ -5,6 +5,10 @@ description = ""
 authors = ["Hugh Perkins <hughperkins@gmail.com>"]
 license = "MIT"
 readme = "README.md"
+packages = [
+    { include = "bpy" },
+    { include = "bpy_autocomplete" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"

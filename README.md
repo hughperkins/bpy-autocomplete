@@ -7,8 +7,9 @@ Auto-completion for Blender bpy!
 
 # To use
 
+- first uninstall `bpy` if it is installed, e.g. `pip uninstall bpy`
 - clone this repo
-- cd into the repo
+- cd into this repo
 - `pip install -e .`
 
 # How to update
